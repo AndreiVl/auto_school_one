@@ -1,0 +1,10 @@
+.form__action {
+	/* 2 Block model */
+	display: flex;
+	justify-content: center;
+}
+.form__action .btn {
+	/* 2 Block model */
+	width: 100%;
+	max-width: 270px;
+}

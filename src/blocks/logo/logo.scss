@@ -1,0 +1,11 @@
+.logo__img img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	max-width: 100px;
+
+	@media(min-width: 580px) {
+		/* 2 Block model */
+		max-width: 168px;
+	}
+}

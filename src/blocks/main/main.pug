@@ -1,0 +1,110 @@
+main.main
+	div.padding-t--132.padding-b--127
+		div.container
+			div.row
+				div.col-12
+					h2.h2.title.margin-39 Преимущества
+
+			div.row
+				div.col-12.col-md-6
+					ul.main__list
+						li.main__item
+							div.main__item-num 1
+							div.main__item-text Обучение на&nbsp;механической и&nbsp;автоматической коробке передач
+
+						li.main__item
+							div.main__item-num 2
+							div.main__item-text Рассрочка оплаты обучения
+
+						li.main__item
+							div.main__item-num 3
+							div.main__item-text Для студентов есть возможность возврата налогового вычета за&nbsp;обучение
+
+						li.main__item
+							div.main__item-num 4
+							div.main__item-text Квалифицированные преподаватели
+
+						li.main__item
+							div.main__item-num 5
+							div.main__item-text Удобное расписание занятий
+
+
+				div.col-12.col-md-6
+					ul.main__list
+						li.main__item
+							div.main__item-num 6
+							div.main__item-text Возможность самостоятельно выбирать удобное время для практики вождения с&nbsp;нструктором
+
+						li.main__item
+							div.main__item-num 7
+							div.main__item-text В&nbsp;стоимость входит теория ПДД, подготовка к&nbsp;экзамену в&nbsp;ГАИ и&nbsp;практические занятия по&nbsp;вождению
+
+						li.main__item
+							div.main__item-num 8
+							div.main__item-text Современное оснащение учебных классов
+
+						li.main__item
+							div.main__item-num 9
+							div.main__item-text Обеспечение всеми необходимыми учебными материалами
+
+	div.padding-80.bg-gray
+		div.container
+			div.row
+				div.col-12
+					h2.h2.title Наша школа
+
+					include ../slider-school/slider-school.pug
+
+	div.padding-80
+		div.container
+			div.row
+				div.col-12
+					h2.h2.title Отзывы
+
+					include ../slider-reviews/slider-reviews.pug
+
+	div.padding-80.bg-gray
+		div.container
+			div.row
+				div.col-12
+					h2.h2.title Сертификаты
+
+				div.col-6.col-lg-3
+					picture.main__img.main__img--mb-30
+						img(src="images/certificate-1.jpg" srcset="images/certificate-1@2x.jpg 2x" alt="Сертификат")
+
+				div.col-6.col-lg-3
+					picture.main__img.main__img--mb-30
+						img(src="images/certificate-2.jpg" srcset="images/certificate-2@2x.jpg 2x" alt="Сертификат")
+
+				div.col-6.col-lg-3
+					picture.main__img
+						img(src="images/certificate-3.jpg" srcset="images/certificate-3@2x.jpg 2x" alt="Сертификат")
+
+				div.col-6.col-lg-3
+					picture.main__img
+						img(src="images/certificate-4.jpg" srcset="images/certificate-4@2x.jpg 2x" alt="Сертификат")
+
+	div.padding-80
+		div.container
+			div.row.align-items-center
+				div.col-12.col-md-4.col-lg-6
+					picture.main__img
+						img(src="images/main-car.png" srcset="images/main-car@2x.png 2x" alt="Автомобиль" style="max-width: 521px;")
+
+				div.col-12.col-md-4.col-lg-3
+					div.padding-l-41
+						div.main__record-shool
+							span.text Автошкола 
+							span.text &laquo;Учебный центр&raquo;
+
+						div.main__record-contacts
+							a.text(href="tel:+79001234567") 
+								b +7&nbsp;900&nbsp;123&nbsp;45&nbsp;67
+							a.text(href="mailto:auto-school-anapa@bk.ru") auto-school-anapa@bk.ru
+
+				div.col-12.col-md-4.col-lg-3
+					include ../btn/btn.pug
+					+btn({text: 'Записаться', type: 'link', url: '#ex1'})(rel='modal:open')(class="btn--block")
+
+	include ../map/map.pug

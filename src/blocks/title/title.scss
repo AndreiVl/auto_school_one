@@ -1,0 +1,22 @@
+.title {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	margin-bottom: 53px;
+}
+.title::before {
+	/* 1 Positioning */
+	position: absolute;
+	left: 3px;
+	bottom: -4px;
+	content: "";
+
+	/* 2 Block model */
+	display: block;
+	width: 103px;
+	height: 3px;
+
+	/* 4 Visual */
+	background-color: $color-yelow;
+}

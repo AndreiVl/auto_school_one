@@ -1,0 +1,82 @@
+.main__list {
+	/* 2 Block model */
+	margin: 0;
+	padding: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.main__item {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.main__item-num {
+	/* 2 Block model */
+	margin-right: 42px;
+	
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 80px;
+	line-height: 100px;
+	font-weight: 700;
+	color: $color-gray-lite;
+
+	@media(min-width: 768px) {
+		/* 3 Typography */
+		font-size: 100px;
+		line-height: 120px;
+	}
+}
+.main__item-text {
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: $color-black;
+
+	@media(min-width: 768px) {
+		/* 3 Typography */
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+.main__img img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+}
+.main__img--mb-30 {
+	/* 2 Block model */
+	display: block;
+	margin-bottom: 30px;
+
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 0px;
+	}
+}
+.main__record-shool {
+	/* 2 Block model */
+	margin-bottom: 21px;
+}
+.main__record-shool span {
+	/* 2 Block model */
+	display: block;
+}
+.main__record-contacts a {
+	/* 2 Block model */
+	display: block;
+	
+	/* 3 Typography */
+	text-decoration: none;
+}
+.main__record-contacts a:hover {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	opacity: 0.7;
+}
